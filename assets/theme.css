@@ -219,7 +219,8 @@
   display: block;
   text-align: center;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  width: 100%; }
   .slick-dots li {
     position: relative;
     display: inline-block;
@@ -2431,7 +2432,7 @@ hr {
       .slideshow__arrows .slick-dots li {
         width: 12px;
         height: 12px;
-        margin-left: 8px; } }
+        margin-left: 14px; } }
     .slideshow__arrows .slick-dots li button, .slideshow__arrows .slick-dots li a {
       position: relative;
       padding: 0;
@@ -5116,7 +5117,7 @@ hr {
 /*================ Slideshow control styles ================*/
 .slideshow__controls {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -5132,18 +5133,12 @@ hr {
   height: 44px;
   padding: 5px;
   background-clip: content-box;
-  background-color: rgba(0, 0, 0, 0.4);
   color: rgba(255, 255, 255, 0.5);
   transition: color 0.2s cubic-bezier(0.44, 0.13, 0.48, 0.87), background-color 0.2s cubic-bezier(0.44, 0.13, 0.48, 0.87);
   display: none; }
   @media only screen and (min-width: 750px) {
     .slideshow__arrows {
       display: flex; } }
-  @media only screen and (min-width: 750px) {
-    .slideshow__controls:hover .slideshow__arrows,
-    .slideshow__controls:focus .slideshow__arrows,
-    .slideshow__controls--hover .slideshow__arrows {
-      background-color: rgba(0, 0, 0, 0.75); } }
   .slideshow__arrows .slideshow__arrow {
     height: 44px;
     width: 44px;
@@ -5155,7 +5150,8 @@ hr {
     transition: color 0.2s cubic-bezier(0.44, 0.13, 0.48, 0.87), background-color 0.2s cubic-bezier(0.44, 0.13, 0.48, 0.87);
     background-color: transparent;
     color: rgba(255, 255, 255, 0.5);
-    border: none; }
+    border: none; 
+    display: none; }
     .slideshow__arrows .slideshow__arrow .icon {
       width: 0.7rem;
       height: 0.7rem;
@@ -5177,7 +5173,7 @@ hr {
     .slideshow__arrows .slick-dots li {
       width: 9px;
       height: 9px;
-      margin-left: 9px; }
+      margin-left: 14px; }
     .slideshow__arrows .slick-dots li button::before,
     .slideshow__arrows .slick-dots li a::before {
       width: 9px;
@@ -5221,12 +5217,8 @@ hr {
   border: none;
   background-color: rgba(0, 0, 0, 0.4);
   transition: color 0.2s cubic-bezier(0.44, 0.13, 0.48, 0.87), background-color 0.2s cubic-bezier(0.44, 0.13, 0.48, 0.87);
-  line-height: 0; }
-  @media only screen and (min-width: 750px) {
-    .slideshow__controls:hover .slideshow__pause,
-    .slideshow__controls:focus .slideshow__pause,
-    .slideshow__controls--hover .slideshow__pause {
-      background-color: rgba(0, 0, 0, 0.75); } }
+  line-height: 0;
+  display: none; }
   .slideshow__pause .icon {
     color: rgba(255, 255, 255, 0.5);
     transition: color 0.2s cubic-bezier(0.44, 0.13, 0.48, 0.87), background-color 0.2s cubic-bezier(0.44, 0.13, 0.48, 0.87); }
@@ -5548,7 +5540,8 @@ hr {
     .site-footer {
       padding-bottom: 35px; } }
   .site-footer h4, .site-footer .h4 {
-    margin-bottom: 12.5px; }
+    margin-bottom: 12.5px;
+    color: #5c5c5c; }
     @media only screen and (min-width: 750px) {
       .site-footer h4, .site-footer .h4 {
         min-height: calc(var(--font-size-header) * 0.7);

@@ -216,6 +216,9 @@
                     </option>
                   {% endfor %}
                 </select>
+
+{% render 'paywhirl-plan-selector', product: product %}
+
               {% endunless %}
               {% if section.settings.show_quantity_selector %}
                 <div class="product-form__controls-group">
